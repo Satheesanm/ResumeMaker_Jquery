@@ -1,0 +1,285 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<body  style="background-color:black;">
+ <center>><h1 style="color: white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;">Resume</h1>
+  </center
+<head><script  src="html2pdf.bundle.min.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js" integrity="sha512-w3u9q/DeneCSwUDjhiMNibTRh/1i/gScBVp2imNVAMCt6cUHIw6xzhzcPFIaL3Q1EbI2l+nu17q2aLJJLo4ZYg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+</head>
+<body>
+  <p>
+
+  <div id="html2pdf" style="display: block; width: 250%; margin: auto;">
+ 
+    <canvas style="
+    justify-content: center;
+    align-items: center;
+    background: rgb(1, 33, 46);"id="myCanvas" width="775" height="1000"
+    style="border:2px solid white; color: white;">
+   
+    Your browser does not support the canvas element.
+    </canvas>
+   
+    
+    <script>
+      var canvas = document.getElementById("myCanvas");
+      var ctx = canvas.getContext("2d");
+      ctx.font = "20px Times New Roman";
+      ctx.fillText("------------------------------------------------ABOUT ME-----------------------------------------------------------------------------",10,100);
+      </script>
+
+    <script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.font = "20px Times New Roman";
+    ctx.fillStyle = "white";
+    
+    var cname = localStorage.getItem("idname");
+     
+
+    ctx.fillText("Name: ",10,30);
+    ctx.fillText(cname,75,30);
+    
+    </script> 
+ 
+    <script>
+      var canvas = document.getElementById("myCanvas");
+      var ctx = canvas.getContext("2d");
+      ctx.font = "20px Times New Roman";
+      
+      var cproff = localStorage.getItem("idprof");
+       
+    
+      ctx.fillText("Profession :",10,80);
+      ctx.fillText(cproff,110,80);
+      ctx.fillText("------------------------------------------------ADDITIONAL INFORMATION-----------------------------------------------------------------------------",10,100);
+      </script>
+
+
+<script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+  ctx.font = "20px Times New Roman";
+  var cskill = localStorage.getItem("lskill");
+  
+  ctx.fillText("Skill : ",10,150);
+  ctx.fillText(cskill,70,150);
+  
+  </script> 
+
+<script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+  ctx.font = "20px Times New Roman";
+  var clang = localStorage.getItem("llang");
+  
+  ctx.fillText("Language Known : ",10,200);
+  ctx.fillText(clang,180,200);
+  
+  </script> 
+
+
+<script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+  ctx.font = "20px Times New Roman";
+  var chobbies = localStorage.getItem("lhobbies");
+  
+  ctx.fillText("Hobbies : ",10,250);
+  ctx.fillText(chobbies,100,250);
+  
+  </script> 
+
+<script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+  ctx.font = "20px Times New Roman";
+  var crefer = localStorage.getItem("lrefference");
+  
+  ctx.fillText("Reference : ",10,300);
+  ctx.fillText(crefer,130,300);
+  ctx.fillText("-----------------------------------------------------------ADDRESS------------------------------------------------------------------",10,320);
+  </script> 
+
+<script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+  ctx.font = "20px Times New Roman";
+  var cstreet = localStorage.getItem("lstreet");
+  
+  ctx.fillText("Street : ",10,350);
+  ctx.fillText(cstreet,80,350);
+  
+  </script> 
+
+<script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+  ctx.font = "20px Times New Roman";
+  var ccode = localStorage.getItem("lcode");
+  
+  ctx.fillText("Postal Code : ",10,400);
+  ctx.fillText(ccode,130,400);
+  
+  </script> 
+
+<script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+  ctx.font = "20px Times New Roman";
+  var ccity = localStorage.getItem("lcity");
+  
+  ctx.fillText("City : ",10,450);
+  ctx.fillText(ccity,80,450);
+  
+  </script> 
+
+<script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+  ctx.font = "20px Times New Roman";
+  var cemail = localStorage.getItem("lemail");
+  
+  ctx.fillText("Email Id : ",10,500);
+  ctx.fillText(cemail,100,500);
+  
+  </script> 
+
+
+<script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+  ctx.font = "20px Times New Roman";
+  var ccontact = localStorage.getItem("lcontact");
+  
+  ctx.fillText("Contact : ",10,550);
+  ctx.fillText(ccontact,100,550);
+  
+  </script> 
+
+<script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+  ctx.font = "20px Times New Roman";
+  var llocation = localStorage.getItem("llocation");
+  
+  ctx.fillText("Prefered Location : ",10,600);
+  ctx.fillText(llocation,180,600);
+  ctx.fillText("-----------------------------------------------------------EDUCATION------------------------------------------------------------------",10,650);
+  </script> 
+
+<script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+  ctx.font = "20px Times New Roman";
+  var cdegree = localStorage.getItem("ldegree");
+  ctx.fillText("Degree : ",10,690);
+  ctx.fillText(cdegree,100,690);
+</script> 
+
+<script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+   ctx.font = "20px Times New Roman";
+  var cColl = localStorage.getItem("lcoll");
+  
+  ctx.fillText("College/University : ",10,730);
+  ctx.fillText(cColl,190,730);
+  
+  </script> 
+
+<script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+   ctx.font = "20px Times New Roman";
+  var cyear = localStorage.getItem("lyear");
+  
+  ctx.fillText("Passed out Year : ",10,770);
+  ctx.fillText(cyear,160,770);
+  
+  </script> 
+
+<script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+   ctx.font = "20px Times New Roman";
+  var cdescript = localStorage.getItem("ldescription1");
+  
+  ctx.fillText("Description : ",10,810);
+  ctx.fillText(cdescript,120,810);
+  ctx.fillText("-----------------------------------------------------------WORK EXPERIENCE------------------------------------------------------------------",10,850);
+  </script> 
+
+<script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+   ctx.font = "20px Times New Roman";
+  var ctitle = localStorage.getItem("ltitle");
+  
+  ctx.fillText("Title/ Designation of previous company : ",10,900);
+  ctx.fillText(ctitle,350,900);
+  
+  </script> 
+
+<script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+   ctx.font = "20px Times New Roman";
+  var cfrom = localStorage.getItem("lfrom");
+  
+  ctx.fillText("From : ",10,940);
+  ctx.fillText(cfrom,100,940);
+  
+  </script> 
+
+<script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+   ctx.font = "20px Times New Roman";
+  var cTo = localStorage.getItem("lto");
+  
+  ctx.fillText("To : ",10,980);
+  ctx.fillText(cTo,60,980);
+  
+  </script> 
+
+<script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+   ctx.font = "20px Times New Roman";
+  var cdescript2 = localStorage.getItem("ldescription2");
+  
+  ctx.fillText("Description : ",10,1020);
+  ctx.fillText(cdescript2,180,1020);
+ 
+  </script> 
+<script>
+function addScript(url) {
+  const script = document.createElement('script');
+  script.type = 'application/javascript';
+  script.src = url;
+  document.head.appendChild(script);
+}
+addScript('dip');
+const element = document.querySelector('body');
+html2pdf(element);</script>
+
+<script></script>
+
+</p>  
+</div>
+<div style="display: block; width: 60%; margin: auto;"> <button id="exportPDF" style="display: block; width: 100px; padding: 10px;">Export PDF</button></div>
+</body>
+<script>
+ let htmlPDF = document.getElementById("html2pdf");
+  let exportPDF = document.getElementById("exportPDF");
+  exportPDF.onclick = (e) => html2pdf(htmlPDF);
+  </script>
+</html>
+

@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+      <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="./lib/jquery-3.3.1.min.js"></script> 
+ <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script>
+  function passvalue()
+  {
+    var name = document.getElementsById("name").value;
+    localStorage.setItem("ab_name", name);
+    returnfal
+  }
+
+
+    </script>
+
+
+   </head>
+   <script>
+        var weight, height, measure, bmi, error;
+      
+    
+      
+      </script>
+      <style>body {
+          background-color: white;
+          text-align: center;
+      }
+      
+      button {
+          background-color: rgba(34, 7, 7, 0);
+          outline: none;
+      }
+      
+      h2 {
+          margin-bottom: 10px;
+      }
+      
+      .btn {
+          margin-bottom: 10px;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+      }
+      
+      input {
+          width: 100%;
+          padding: 5px 14px;
+          border: 2px solid #201f1d;
+          margin-bottom: 10px;
+          background-color: rgba(0,0,0,.4);
+          outline: none;
+          color: #fff;
+          font-size: 14px;
+      }
+      
+      input:focus {
+          border: 2px solid rgba(0,0,0,.4);
+          background-color: rgb(60,60,60);
+      }
+      
+      form {
+          background-color: rgb(43, 4, 4);
+          padding: 20px;
+          color: #000;
+          box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
+      }
+      
+      form p {
+          margin-bottom: 5px;
+      }
+      
+      form p:nth-child(1){
+          margin-top: 0;
+      }
+      
+      .panel {
+          margin-top: 20px;
+          float: none;
+      }
+      body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            background-color: black;
+         }
+         .container{
+            margin: auto;
+            padding: auto;
+         }
+         #content{
+            align-items: center;
+            align-self: center;
+            align-content: center;
+            text-align: center;
+         }
+      
+      @media (min-width: 768px) {
+          .panel {
+              width: 50%;
+              margin-left: auto;
+              margin-right: auto;
+          }
+      }
+      
+      @media (min-width: 1024px) {
+          .panel {
+              width: 30%;
+              margin-left: auto;
+              margin-right: auto;
+          }
+      }
+      
+    .dropbtn {
+      background-color: #04AA6D;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: #ddd;}
+    
+    .dropdown:hover .dropdown-content {display: block;}
+    
+    .dropdown:hover .dropbtn {background-color: #3e8e41;}</style>
+      
+      
+     </script>
+   <body>
+      
+      <div data-role = "page" id = "page1">
+         <div data-role = "header" style="background-color: maroon; color: white;">
+            <p >  CV Resume Maker App</p>
+               <i style="color: maroon; float: left; margin: 8px;"
+               class="fa fa-arrow-left" onclick="history.back()"></i>
+               <i style="color: maroon; float: right; margin: 8px;"
+               class="fa fa-arrow-right" onclick="history.forward()"></i>
+         </div>
+         <br><br><br><br><br><br><br><br>
+         <center>
+         <div data-role = "main" class = "ui-content">
+            <h1 style="font-size: 30px; font-family:algerian;  background-color: maroon; color:white; text-align: center; padding: 3px; margin: 3px;">   Welcome to CV resume maker app</h1>
+            <a href = "#page2" data-transition = "flip" style="color: maroon;">Continue</a>
+         </div>
+         <br><br><br><br><br><br><br><br>
+         <div data-role = "footer">
+            <h2>Copy rights @satheesan -2022</h2>
+         </div>
+      </div>
+   </center>
+
+      <div data-role = "page" id = "page2">
+         <div data-role = "header" style="background-color: maroon; color: white;">
+            <p >  CV Resume Maker App</p>
+            <i style="color: maroon; float: left; margin: 8px;"
+            class="fa fa-arrow-left" onclick="history.back()"></i>
+            <i style="color: maroon; float: right; margin: 8px;"
+            class="fa fa-arrow-right" onclick="history.forward()"></i>
+
+      </div>
+        
+         <div data-role = "main" class = "ui-content">
+            <center><h1>Home</h1>
+               <br><br><br>
+              <a href="#page3" data-transition = "flip" style="color: maroon;">About Me </a><br><br>
+              <a href="#page4"  data-transition = "flip"style="color: maroon;">Add Info</a><br><br>
+              <a href="#page5" data-transition = "flip"style="color: maroon;">Address</a><br><br>
+              <a href="#page6" data-transition = "flip"style="color: maroon;">Education</a><br><br>
+              <a href="#page7" data-transition = "flip"style="color: maroon;">Work Experience</a><br>
+            </center>
+            </div>
+           
+         </div>
+
+         <div data-role = "footer"> 
+            <H6>All are mandatory field</H6>          
+         </div>
+      </div>
+
+      
+       <!---page 3---->
+
+    <div data-role = "page" id = "page3">
+      <div data-role = "header" style="background-color: maroon; color: white;">
+        <p >  CV Resume Maker App</p>
+         <i style="color: maroon; float: left; margin: 8px;"
+         class="fa fa-arrow-left" onclick="history.back()"></i>
+         <i style="color: maroon; float: right; margin: 8px;"
+         class="fa fa-arrow-right" onclick="history.forward()"></i>
+      </div>
+      
+      <div data-role = "main" class = "ui-content">
+      <br><br><br><br>
+         <form method="get" action="#page8">
+          <fieldset><legend style="color: white;"> <h1>About me</h1></legend>
+            <div id="weightInput">
+              <label style="color:#fff;float: left;" >Enter your Name</label>
+              <br>
+              <input placeholder="Name" class="form-control" id="name"  name="a" />
+            </div>
+            <div id="heightInput">
+              <p style="color:#fff;float: left;">Enter your Profession</p>
+              <br>
+              <input placeholder="Profession" class="form-control" id="profression"  name="b" />
+            </div>
+            <br>
+          </fieldset>
+          </form>
+          <br><br>
+          <div data-role = "footer" >
+           
+          <table style="float: right">
+            <tr>
+              <td>
+                <br>
+                
+          <button style="margin: 2px; background-color:  maroon;  color: white;" onclick="myFunc1()">Next</button>
+              <td>
+                <br>
+                <button style="margin: 2px" class="btn btn-primary" type="reset">Cancel</button>
+              </td>
+            </tr>
+            <br>
+            <br>
+      
+          </table>
+          </form>
+       
+      
+          <!--script to redirect to another webpage-->
+          <script>
+          function myFunc1() {
+             
+            var name= document.getElementById("name").value;
+              var profess = document.getElementById("profression").value
+              localStorage.setItem("idname",name);
+              localStorage.setItem("idprof",profess);
+              window.location.href="#page4";
+
+          }
+          </script>
+      </div>
+             
+      </div>
+   </div>
+    <!---page 4---->
+
+    <div data-role = "page" id = "page4">
+      <div data-role = "header" style="background-color: maroon; color: white;">
+         <p >  CV Resume Maker App</p>
+         <i style="color: maroon; float: left; margin: 8px;"
+         class="fa fa-arrow-left" onclick="history.back()"></i>
+         <i style="color: maroon; float: right; margin: 8px;"
+         class="fa fa-arrow-right" onclick="history.forward()"></i>
+      </div>
+      
+      <div data-role = "main" class = "ui-content">
+     
+         <br><br><br><br>
+         <form>
+          <fieldset><legend style="color: white;"> <h1>Additional Information </h1></legend>
+   <div id="weightInput">
+     <p style="color:#fff;float: left;">Enter your SkillSet</p>
+     <br>
+        <input placeholder="skill set" class="form-control" id="skill" name="a" />
+   </div>
+   <div id="heightInput">
+     <p style="color:#fff;float: left;" >Enter your Language Known</p>
+     <br>
+          <input placeholder="Language Known" class="form-control" id="language"  name="b"/> 
+   </div>
+   <div id="heightInput">
+     <p style="color:#fff;float: left;" >Enter your Hobbies</p>
+     <br>
+      <input placeholder="Hobbies" class="form-control" id="hobbies"  name="b"/> 
+   </div>
+   <div id="heightInput">
+     <p style="color:#fff;float: left;" >Enter your Reference</p>
+     <br>
+      <input placeholder="Reference" class="form-control" id="reference" name="b"/> 
+   </div>
+ <br>
+ </fieldset>
+</form>
+          <br><br>
+          <div data-role = "footer" >
+           <table style="float: right">
+              <tr>
+                <td>
+                  <br>
+            <button style="margin: 2px; background-color:  maroon;  color: white;" onclick="myFunc2()">Next</button>
+                <td>
+                  <br>
+                  <button style="margin: 2px" class="btn btn-primary" type="reset">Cancel</button>
+                </td>
+              </tr>
+              <br>
+              <br>
+            </table>
+            </form>
+            <script>
+            function myFunc2() {
+              var idskill= document.getElementById("skill").value;
+              localStorage.setItem("lskill",idskill);
+              var idlang= document.getElementById("language").value;
+              localStorage.setItem("llang",idlang);
+              var idhobbies= document.getElementById("hobbies").value;
+              localStorage.setItem("lhobbies",idhobbies);
+              var idreference= document.getElementById("reference").value;
+              localStorage.setItem("lrefference",idreference);
+              window.location.href="#page5";
+           }
+            </script>
+        </div>      
+        </div>
+     </div>
+    <!---page 5---->
+
+    <div data-role = "page" id = "page5">
+      <div data-role = "header" style="background-color: maroon; color: white;">
+        <p >  CV Resume Maker App</p>
+         <i style="color: maroon; float: left; margin: 8px;"
+         class="fa fa-arrow-left" onclick="history.back()"></i>
+         <i style="color: maroon; float: right; margin: 8px;"
+         class="fa fa-arrow-right" onclick="history.forward()"></i>
+      </div>
+      <div data-role = "main" class = "ui-content">
+      <br><br><br><br>
+  <form>
+   <fieldset><legend style="color: white;"> <h1>Address</h1></legend>
+   <div id="weightInput">
+     <p style="color:#fff;float: left;">Enter the street</p>
+     <br>
+        <input placeholder="street" class="form-control" id="street"  name="a" />
+   </div>
+   <div id="heightInput">
+     <p style="color:#fff;float: left;" >Enter the Postal code</p>
+     <br>
+      <input placeholder="postal code" class="form-control" id="code"  name="b"/> 
+   </div>
+   <div id="heightInput">
+     <p style="color:#fff;float: left;" >Enter the City</p>
+     <br>
+      <input placeholder="city" class="form-control" id="city"  name="b"/> 
+   </div>
+   <div id="heightInput">
+     <p style="color:#fff;float: left;" >Enter the email</p>
+     <br>
+      <input placeholder="email" class="form-control" id="email"  name="b"/> 
+   </div>
+   <div id="heightInput">
+     <p style="color:#fff;float: left;" >Enter the Contact No</p>
+     <br>
+      <input placeholder="contact no" class="form-control" id="contact" type="number" pattern="[0-9]*" name="b"/> 
+   </div>
+      <br>
+        <label style="color:#fff;float: left;"   > Prefered Location:</label>
+        <br>
+        <select class="form-select" name="position" id="location">
+          <option value="USA">USA</option>
+          <option value="Canada">Canada</option>
+          <option value="UK">UK</option>
+          <option value="Australia">Australia</option>
+        </select>
+        <br><br>
+       </fieldset>
+        </form>
+          <br><br>
+          <div data-role = "footer" >
+            <table style="float: right">
+              <tr>
+                <td>
+                  <br> 
+            <button style="margin: 2px; background-color:  maroon;  color: white;" onclick="myFunc3()">Next</button>
+                <td>
+                  <br>
+                  <button style="margin: 2px" class="btn btn-primary" type="reset">Cancel</button>
+                </td>
+              </tr>
+              <br>
+              <br>
+            </table>
+            </form>
+            <script>
+              function myFunc3() {
+               
+               var idstreet= document.getElementById("street").value;
+               localStorage.setItem("lstreet",idstreet);
+                
+                var idcode= document.getElementById("code").value;
+                localStorage.setItem("lcode",idcode);
+                
+                var idcity= document.getElementById("city").value;
+                localStorage.setItem("lcity",idcity);
+  
+                var idemail= document.getElementById("email").value;
+                localStorage.setItem("lemail",idemail);
+                 
+                var idcontact= document.getElementById("contact").value;
+                localStorage.setItem("lcontact",idcontact);
+
+                var idlocation= document.getElementById("location").value;
+                localStorage.setItem("llocation",idlocation);
+               
+                 window.location.href="#page6";
+             }
+              </script>
+        </div>      
+        </div>
+     </div>
+
+    <!---page 6---->
+
+    <div data-role = "page" id = "page6">
+      <div data-role = "header" style="background-color: maroon; color: white;">
+        <p >  CV Resume Maker App</p>
+         <i style="color: maroon; float: left; margin: 8px;"
+         class="fa fa-arrow-left" onclick="history.back()"></i>
+         <i style="color: maroon; float: right; margin: 8px;"
+         class="fa fa-arrow-right" onclick="history.forward()"></i>
+      </div>
+      <div data-role = "main" class = "ui-content">
+        <br><br><br><br>
+        <form>
+         <fieldset><legend style="color: white;"> <h1>Education</h1></legend>
+            <div id="weightInput">
+              <p style="color:#fff;float: left;">Enter your Degree</p>
+              <br>
+                 <input placeholder="Degree" class="form-control" id="degree"  name="a" />
+            </div>
+            <div id="heightInput">
+              <label style="color:#fff;float: left;" >Enter your University/College Name</label>
+              <br> <br>
+                       <input placeholder="Uni/Coll name " class="form-control" id="coll"  name="b"/> 
+            </div>
+            <div id="heightInput">
+              <p style="color:#fff;float: left;" >Enter your passed out year</p>
+              <br>
+               <input placeholder="passed out year" class="form-control" id="year" type="number" pattern="[0-9]*" name="b"/> 
+            </div>
+            <div id="heightInput">
+              <p style="color:#fff;float: left;" >Description</p>
+              <br>
+               <input placeholder="description" class="form-control" id="description1"  name="b"/> 
+            </div>
+          <br>
+          </fieldset>
+        </form>       
+          <br><br>
+          <div data-role = "footer" >
+            <table style="float: right">
+              <tr>
+                <td>
+                  <br>        
+            <button style="margin: 2px; background-color:  maroon;  color: white;" onclick="myFunc4()">Next</button>
+                <td>
+                  <br>
+                  <button style="margin: 2px; " class="btn btn-primary" type="reset">Cancel</button>
+                </td>
+              </tr>
+              <br>
+              <br>
+            </table>
+            </form>
+          <script>
+              function myFunc4() {
+               
+               var iddegree= document.getElementById("degree").value;
+               localStorage.setItem("ldegree",iddegree);
+                
+               var idcoll= document.getElementById("coll").value;
+               localStorage.setItem("lidcoll",idcoll);
+                
+               var idyear= document.getElementById("year").value;
+               localStorage.setItem("lyear",idyear);
+  
+               var iddescription1= document.getElementById("description1").value;
+               localStorage.setItem("ldescription1",iddescription1);
+                               
+               window.location.href="#page7";
+               }
+              </script>
+        </div>          
+        </div>
+     </div>
+
+   <!---page 7---->
+
+   <div data-role = "page" id = "page7">
+      <div data-role = "header" style="background-color: maroon; color: white;">
+        <p >  CV Resume Maker App</p>
+               <i style="color: maroon; float: left; margin: 8px;"
+               class="fa fa-arrow-left" onclick="history.back()"></i>
+               <i style="color: maroon; float: right; margin: 8px;"
+               class="fa fa-arrow-right" onclick="history.forward()"></i>
+      </div>
+      
+      <div data-role = "main" class = "ui-content">
+        
+            
+         <br><br><br><br>
+         <form>
+          <fieldset><legend style="color: white;"> <h1>Work Experience</h1></legend>
+   <div id="weightInput">
+     <p style="color:#fff;float: left;">Enter your Title</p>
+     <br>
+        <input placeholder="Designation" class="form-control" id="title"  name="a" />
+   </div>
+
+
+
+
+  <p style="color:#fff; float: left;">From</p>
+   <br>
+<input class="form-control"  type = "date" name = "date" id="from">   
+
+<p style="color:#fff; float: left;">To</p>
+   <br>
+<input class="form-control"  type = "date" name = "date" id="to">  
+<br>
+
+   <div id="heightInput">
+      <label style="color:#fff;float: left;"   >Description</label>
+      <br>
+      <input placeholder="Description" class="form-control" id="description2"  name="b"/> 
+   </div>
+  
+ <br>
+ <label style="color:#fff;float: left;"   > Are you an Immediate Joinee:</label>
+ <br>
+ <select class="form-select" name="position" id="joinee">
+   <option value="Yes">Yes</option>
+   <option value="No">No</option>
+ 
+ 
+ </select>
+ <br><br>
+ <div id="heightInput">
+
+   <p style="color:#fff; float: left; " >Logo</p> <br>
+ <i  style="color:#fff; float: left; padding: 2px; margin: 1px" class='fas fa-file-upload'></i> 
+ 
+ <i  style="color:#fff; float: left;padding: 2px; margin: 1px" class='glyphicon glyphicon-camera'></i>
+<br>  <div style="color:#fff; float: left; padding: 2px; margin: 1px" class="custom-control custom-switch">
+   
+
+ </div>
+ </div>
+ <br>
+
+
+
+ 
+ <br>
+ </fieldset>
+</form>
+        
+         
+          <br><br>
+          <div data-role = "footer" >
+           
+            <table style="float: right">
+              <tr>
+                <td>
+                  <br>
+                  
+            <button style="margin: 2px; background-color:  maroon;  color: white;" onclick="myFunc5()">Save</button>
+                <td>
+                  <br>
+                  <button style="margin: 2px; " class="btn btn-primary" type="reset">Cancel</button>
+                </td>
+              </tr>
+              <br>
+              <br>
+        
+            </table>
+            </form>
+  
+       
+            <script>
+              function myFunc5() {
+               
+               var idtitle= document.getElementById("title").value;
+                
+                 localStorage.setItem("ltitle",idtitle);
+                
+                 var idfrom= document.getElementById("from").value;
+                 localStorage.setItem("lfrom",idfrom);
+                
+                var idto= document.getElementById("to").value;
+                localStorage.setItem("lto",idto);
+  
+                var iddescription2= document.getElementById("description2").value;
+                 localStorage.setItem("ldescription2",iddescription2);
+                 
+                
+               
+                 window.location.href="display.html";
+   
+             }
+              </script>
+            
+        </div>
+               
+        </div>
+     </div>
+   
+   
+
+    
+
+   </body>
+   <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+
+    <script type="text/javascript">
+      const tabs = document.querySelectorAll('[data-tab-value]')
+      const tabInfos = document.querySelectorAll('[data-tab-info]')
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          const target = document
+            .querySelector(tab.dataset.tabValue);
+
+          tabInfos.forEach(tabInfo => {
+            tabInfo.classList.remove('active')
+          })
+          target.classList.add('active');
+        })
+      })
+    </script>
+</html>
